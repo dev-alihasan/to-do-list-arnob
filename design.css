@@ -135,3 +135,17 @@ button.delete:hover {
 .date-time-button:hover {
   background-color: #d68e0d;
 }
+
+.history-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  border-top: 1px solid #ccc;
+}
+
+.history-list li {
+  margin: 5px 0;
+  padding: 5px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+}
