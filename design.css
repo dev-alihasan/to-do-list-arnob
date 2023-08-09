@@ -1,0 +1,137 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transform: translateY(0);
+  opacity: 1;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.container.hide {
+  transform: translateY(20px);
+  opacity: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  transition: background-color 0.3s;
+}
+
+li:hover {
+  background-color: #f5f5f5;
+}
+
+button.delete {
+  background-color: #e74c3c;
+  transition: background-color 0.3s;
+}
+
+button.delete:hover {
+  background-color: #c0392b;
+}
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 480px) {
+  .container {
+    max-width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 10px;
+  }
+
+  input[type="text"] {
+    padding: 8px;
+  }
+
+  button {
+    padding: 8px 16px;
+  }
+}
+
+/* ...previous styles... */
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.done-button {
+  padding: 6px 12px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.done-button:hover {
+  background-color: #219e52;
+}
+
+.task-item.done {
+  background-color: #e0ffe0;
+  text-decoration: line-through;
+}
+/* ...previous styles... */
+
+.date-time-button {
+  padding: 6px 12px;
+  background-color: #f39c12;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.date-time-button:hover {
+  background-color: #d68e0d;
+}
